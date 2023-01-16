@@ -7,6 +7,11 @@ import "../../styles/toolbar.scss";
 
 const Toolbar = () => {
 
+  const changeColor = (event) => {
+    toolState.setStrokeColor(event.target.value)
+    toolState.setFillColor(event.target.value)
+  }
+
   return (
     <div className='toolbar'>
       <div>
@@ -15,7 +20,7 @@ const Toolbar = () => {
         <button className='toolbar__btn circle'></button>
         <button className='toolbar__btn eraser'></button>
         <button className='toolbar__btn line'></button>
-        <input type="color" />
+        <input onChange={(event) => changeColor(event)} type="color" />
       </div>
 
       <div>

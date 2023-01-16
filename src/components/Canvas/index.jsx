@@ -17,7 +17,7 @@ const Canvas = observer(() => {
 
   return (
     <div className='canvas'>
-      <canvas ref={canvasRef} width={600} height={480} />
+      <canvas ref={canvasRef} width={1280} height={720} />
     </div>
   );
 });
